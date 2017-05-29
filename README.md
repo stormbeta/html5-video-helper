@@ -1,4 +1,4 @@
-#Local HTML5 Video Player Helper
+# Local HTML5 Video Player Helper
 
 *NOTE: This was built as a one-off solution for some videos I was watching, and is pretty rough*
 
@@ -7,7 +7,7 @@ local video files, particularly at higher playback speeds.
 
 This is intended to be used in conjunction with the [Video Speed Controller](https://github.com/igrigorik/videospeed) extension.
 
-##Motivation:
+## Motivation:
 
 VLC is great, but at higher playback speeds the audio gets very distorted.
 Chrome's built-in HTML5 video player handles this much better, but is pickier
