@@ -1,0 +1,24 @@
+<html>
+  <video controls id='video_id'>
+    <track kind="subtitles" label='English' srclang='en' src="SUBTITLES" default/>
+    <source src="VIDEO_FILE">
+  </video>
+  <script>
+    var video = document.getElementById('video_id');
+    video.addEventListener('loadeddata', function() {
+      video.play()
+      setTimeout(function() {
+        video.defaultPlaybackRate = 2.0;
+        video.playbackRate = 2.0;
+      }, 250.0)
+    }, false);
+    document.onkeypress = function(e){
+      if((e || window.event).keyCode === 32){
+        video.paused ? video.play() : video.pause();
+      }
+      if((e || window.event).keyCode == 102) {
+        document.webkitIsFullScreen ? video.webkitExitFullscreen() : video.webkitRequestFullscreen()
+      }
+    };
+  </script>
+</html>
