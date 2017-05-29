@@ -7,6 +7,10 @@ local video files, particularly at higher playback speeds.
 
 This is intended to be used in conjunction with the [Video Speed Controller](https://github.com/igrigorik/videospeed) extension.
 
+## TODO
+
+Subtitles won't load over local file paths, so something like http-server is needed to serve the files over a loopback url.
+
 ## Motivation:
 
 VLC is great, but at higher playback speeds the audio gets very distorted.
